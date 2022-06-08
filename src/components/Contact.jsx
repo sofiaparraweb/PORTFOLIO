@@ -36,7 +36,7 @@ const Contact = () => {
     }
     if (!value.email) {
       errors.email = "Email is required";
-    } else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(value.email)) {
+    } else if (!(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(value.email))) {
       errors.email = "Email is not valid";
     }
 
