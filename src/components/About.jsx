@@ -34,7 +34,7 @@ const About = () => {
                 I have experience in JavaScript language, HTML, CSS and also in technologies like Node.js, Express, Sequelize, PostgreSQL, React.js, Redux. VCS tool: Git.
               </p>
             </div>
-            <Link to={navigation[3].href}>
+            <Link to={navigation[3].href} activeClass="active" spy={true} smooth={true} duration={500} offset={-70} className="transition-all duration-300">
             <button className='btn btn-md bg-accent hover:bg-secondary-hover transition-all'>
               Contact me
             </button>

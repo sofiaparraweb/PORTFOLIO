@@ -24,7 +24,7 @@ const Hero = () => {
               in experiments and working on projects. <br />
               <b><i>It's not only a job, is a passion.</i></b>
             </p>
-            <Link to={navigation[3].href}>
+            <Link to={navigation[3].href} activeClass="active" spy={true} smooth={true} duration={500} offset={-70} className="transition-all duration-300">
             <button className="btn btn-md bg-accent hover:bg-accent-hover md:btn-lg transition-all">Work with me</button>
             </Link>
           </div>
