@@ -1,6 +1,8 @@
 import React from "react";
 
 import Image from "../assets/img/about.JPG";
+import { navigation } from "../data";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -32,9 +34,11 @@ const About = () => {
                 I have experience in JavaScript language, HTML, CSS and also in technologies like Node.js, Express, Sequelize, PostgreSQL, React.js, Redux. VCS tool: Git.
               </p>
             </div>
+            <Link to={navigation[3].href}>
             <button className='btn btn-md bg-accent hover:bg-secondary-hover transition-all'>
               Contact me
             </button>
+            </Link>
           </div>
         </div>
       </div>

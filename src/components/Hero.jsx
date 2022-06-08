@@ -2,6 +2,9 @@ import React from "react";
 
 import Banner from "../assets/img/imgHero.png";
 
+import { navigation } from "../data";
+import { Link } from "react-scroll";
+
 const Hero = () => {
   return (
     <section
@@ -21,7 +24,9 @@ const Hero = () => {
               in experiments and working on projects. <br />
               <b><i>It's not only a job, is a passion.</i></b>
             </p>
+            <Link to={navigation[3].href}>
             <button className="btn btn-md bg-accent hover:bg-accent-hover md:btn-lg transition-all">Work with me</button>
+            </Link>
           </div>
 
           {/* right side  */}
