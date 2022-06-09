@@ -71,7 +71,7 @@ export const projectsData = [
     name: 'Shoes e-commerce',
     category: 'Full Stack',
     href: 'https://e-commerce-five-mu.vercel.app/',
-    description: 'This PERN application allows users to create an account, login, and view their cart. It is based on the Final Project that my my work group and I made for Henry bootcamp. I wanted to improve my frontend skills by redoing it.',
+    description: 'This PERN application allows users to create an account, login, and view their cart. It is based on the Final Project that my work group and I made for Henry bootcamp. I wanted to improve my frontend skills by redoing it.',
   },
   // {
   //   id: '3',
