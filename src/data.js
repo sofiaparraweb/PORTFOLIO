@@ -10,6 +10,7 @@ import {
 
 // projects images
 import Project1 from './assets/img/projects/p1.png';
+import Project2 from './assets/img/projects/p2.png';
 
 
 import SkillImg1 from './assets/img/skills/html5.png';
@@ -64,12 +65,14 @@ export const projectsData = [
     href: 'https://countries-main-app.vercel.app/',
     description: 'A full stack application that allows users to search for countries and view their information.',
   },
-  // {
-  //   id: '2',
-  //   image: Project2,
-  //   name: 'project name 2',
-  //   category: 'Frontend',
-  // },
+  {
+    id: '2',
+    image: Project2,
+    name: 'Shoes e-commerce',
+    category: 'Full Stack',
+    href: 'https://e-commerce-five-mu.vercel.app/',
+    description: 'This PERN application allows users to create an account, login, and view their cart. It is based on the Final Project that my my work group and I made for Henry bootcamp. I wanted to improve my frontend skills by redoing it.',
+  },
   // {
   //   id: '3',
   //   image: Project3,
