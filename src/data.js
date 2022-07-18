@@ -69,7 +69,7 @@ export const projectsData = [
   {
     id: "3",
     image: Project3,
-    name: "project name 3",
+    name: "My Shop Online",
     category: "Full stack",
     href: "https://my-shop-online.vercel.app/",
     description:
