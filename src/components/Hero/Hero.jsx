@@ -1,8 +1,8 @@
 import React from "react";
 
-import Banner from "../assets/img/imgHero.png";
+import Banner from "../../assets/img/imgHero.png";
 
-import { navigation } from "../data";
+import { navigation } from "../../data";
 import { Link } from "react-scroll";
 
 const Hero = () => {
@@ -16,13 +16,13 @@ const Hero = () => {
           {/* left side  */}
           <div className="flex-1 flex flex-col items-center lg:items-start">
             <p className="text-lg text-accent mb-[22px]">
-              Hi, I'm Kimberly! 🙋🏻‍♀️{" "}
+              Hi, I'm Sofia! {" "}
             </p>
             <h1 className="text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px] ">Full Stack Developer</h1>
             <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left">
-              I love being able to learn something everyday by engaging
-              in experiments and working on projects. <br />
-              <b><i>It's not only a job, is a passion.</i></b>
+            I'm a curious and dedicated woman who thrives on personal growth and constantly challenging myself. With a strong work ethic and a passion for excellence, I strive to provide the best service and create meaningful experiences.
+<br />
+<b><i>Passionately curious</i></b>
             </p>
             <Link to={navigation[3].href} activeClass="active" spy={true} smooth={true} duration={500} offset={-70} className="transition-all duration-300">
             <button className="btn btn-md bg-accent hover:bg-accent-hover md:btn-lg transition-all">Work with me</button>

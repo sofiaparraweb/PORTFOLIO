@@ -2,9 +2,10 @@
 import { FiGithub, FiLinkedin, FiMail, FiMapPin } from "react-icons/fi";
 
 // projects images
-import Project1 from "./assets/img/projects/p1.png";
-import Project2 from "./assets/img/projects/p2.png";
-import Project3 from "./assets/img/projects/p3.png";
+import Project1 from "./assets/img/projects/pokemon.png";
+import Project2 from "./assets/img/projects/lagruta.png";
+import Project3 from "./assets/img/projects/tienda.png";
+
 
 import SkillImg1 from "./assets/img/skills/html5.png";
 import SkillImg2 from "./assets/img/skills/CSS.png";
@@ -34,15 +35,15 @@ export const navigation = [
   },
 ];
 
-// social
+// 
 export const social = [
   {
     icon: <FiLinkedin />,
-    href: "https://www.linkedin.com/in/kimberly-blandon/?locale=en_US",
+    href: "https://www.linkedin.com/in/sofia-parra-5a36b0205/",
   },
   {
     icon: <FiGithub />,
-    href: "https://github.com/Kimblag",
+    href: "https://github.com/sofiaparraweb",
   },
 ];
 
@@ -51,44 +52,36 @@ export const projectsData = [
   {
     id: "1",
     image: Project1,
-    name: "Countries App",
+    name: "Pokemon App",
     category: "Full Stack",
-    href: "https://countries-main-app.vercel.app/",
+    href: "https://pi-pokemon-main-green.vercel.app/",
     description:
-      "A full stack application that allows users to search for countries and view their information.",
+      "A full-stack application that allows users to search for Pokemons and create their own teams. You can filter, view details, and explore the Pokemon world!",
   },
   {
     id: "2",
     image: Project2,
-    name: "Shoes e-commerce",
+    name: "La Gruta Foundation",
     category: "Full Stack",
-    href: "https://e-commerce-five-mu.vercel.app/",
+    href: "https://lagrutaclient.vercel.app/",
     description:
-      "This PERN application allows users to create an account, login, and view their cart. It is based on the Final Project that my work group and I made for Henry bootcamp. I wanted to improve my frontend skills by redoing it.",
+      "This project was created as a final project for the Henry bootcamp. It was a great opportunity to help a foundation by developing an app for them. You can view their projects, shop in their store, create an account, and make donations!",
   },
   {
     id: "3",
     image: Project3,
-    name: "My Shop Online",
-    category: "Full stack",
-    href: "https://my-shop-online.vercel.app/",
+    name: "E-commerce",
+    category: "Full Stack",
+    href: "https://lagrutaclient.vercel.app/",
     description:
-      "This application is an ecommerce in which user can register, login, search products, add products to favorites / cart, recover passwords, verify user account. It was made it with TypeScript, Node.js, Express, MongoDB, React, Redux Toolkit",
-  },
+      "A complete online store. You can browse products, add them to your cart, proceed to checkout, and make purchases!",
+  }
+  
 ];
 
 export const projectsNav = [
   {
     name: "all",
-  },
-  {
-    name: "Full Stack",
-  },
-  {
-    name: "Frontend",
-  },
-  {
-    name: "Backend",
   },
   // {
   //   name: 'Mobile Development',
@@ -127,12 +120,12 @@ export const contact = [
     icon: <FiMail />,
     title: "Have a question?",
     subtitle: "I am here to help you.",
-    description: "Email me at kimberly.blandong@gmail.com",
+    description: "Email me at sofiaparraweb@gmail.com",
   },
   {
     icon: <FiMapPin />,
     title: "Current Location",
-    subtitle: "Buenos Aires, Argentina",
-    description: "Serving clients worldwide",
+    subtitle: "Vermont, United States",
+    description: "Open to help you from around the world!",
   },
 ];

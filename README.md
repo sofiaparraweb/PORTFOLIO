@@ -1,4 +1,4 @@
-## Portfolio site for [@Kimblag]
+## Portfolio site for [@SofiaParra]
 
 <p>This portfolio was built using React.js, JavaScript, Firebase, Tailwind and React-Scroll
 </p>

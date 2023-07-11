@@ -1,12 +1,12 @@
 import React from "react";
-import About from "./components/About";
-import ButtonBack from "./components/ButtonBack";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Portfolio from "./components/Portfolio";
-import Skills from "./components/Skills";
+import About from "./components/About/About";
+import ButtonBack from "./components/ButtonBack/ButtonBack";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Skills from "./components/Skills/Skills";
 
 // import components
 

@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 
-import { navigation } from "../data";
+import { navigation } from "../../data";
 
 import { XIcon } from "@heroicons/react/outline";
 import { MenuAlt3Icon } from "@heroicons/react/outline";
-
-import Socials from "./Socials";
 
 import { motion } from "framer-motion";
 
@@ -49,7 +47,6 @@ const NavMobile = () => {
       >
         <MenuAlt3Icon className="w-8 h-8" />
       </div>
-
       {/* circle  */}
       <motion.div
         variants={circleVariants}
@@ -88,6 +85,7 @@ const NavMobile = () => {
                 {item.name}
               </Link>
             </li>
+            
           );
         })}
       </motion.ul>

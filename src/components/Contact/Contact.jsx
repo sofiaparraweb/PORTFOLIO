@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { db } from "../firebase";
-import { addDoc, collection } from "firebase/firestore";
-
+import React, { useRef } from 'react';
+import "./Contact.css";
 import "react-toastify/dist/ReactToastify.css";
 import { toast, ToastContainer } from "react-toastify";
-
-import { contact } from "../data";
+import emailjs from 'emailjs-com';
+import { contact } from "../../data";
+import { useState } from 'react';
 
 const Contact = () => {
   const initialValues = {
@@ -16,17 +15,13 @@ const Contact = () => {
   };
   const [values, setValues] = useState(initialValues);
   const [isSubmit, setIsSubmit] = useState(false);
-
   const [error, setError] = useState({});
 
-  console.log(values);
-
-  const userCollectionRef = collection(db, "contacts");
+  const form = useRef();
 
   const handleOnChange = (e) => {
     const { name, value } = e.target;
     setValues({ ...values, [name]: value });
-    console.log(values);
   };
 
   const validate = (value) => {
@@ -36,7 +31,7 @@ const Contact = () => {
     }
     if (!value.email) {
       errors.email = "Email is required";
-    } else if (!(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(value.email))) {
+    } else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(value.email)) {
       errors.email = "Email is not valid";
     }
 
@@ -51,42 +46,42 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setError(validate(values));
-    setIsSubmit(true);
-    if (!values.name || !values.email || !values.subject || !values.message) {
-      toast.warn("Please fill all the fields");
+    const errors = validate(values);
+
+    if (Object.keys(errors).length === 0) {
+      emailjs
+        .sendForm(
+          'service_03386iw',
+          'template_s6b84ws',
+          form.current,
+          'NK-kDv9qc4XGqT3Ow'
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setIsSubmit(true);
+            toast.success('Correo enviado correctamente');
+            setValues(initialValues);
+          },
+          (error) => {
+            console.log(error.text);
+            toast.error('Error al enviar el correo');
+          }
+        );
     } else {
-      try {
-        addDoc(userCollectionRef, {
-          name: values.name,
-          email: values.email,
-          subject: values.subject,
-          message: values.message,
-        });
-        setValues(initialValues);
-        toast.success("Message sent successfully");
-      } catch (error) {
-        console.log(error);
-      }
+      setError(errors);
     }
   };
 
-  useEffect(() => {
-    console.log(error);
-    if (Object.keys(error).length === 0 && isSubmit) {
-      console.log(values);
-    }
-  }, [error]);
-
   return (
     <section className="section bg-primary" id="contact">
-      <div className="container mx-auto">
+      <div className="container mx-auto container-contact">
         <div className="flex flex-col items-center text-center">
           <h2 className="section-title before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block">
             Contact me
           </h2>
           <p className="subtitle">
-            Do you want to know more about me? <br />
+            Do you want to know me better? <br />
             Don't hesitate and contact me!
           </p>
         </div>
@@ -112,6 +107,7 @@ const Contact = () => {
             id="contactForm"
             onSubmit={handleSubmit}
             className="space-y-8 w-full max-w-[780px]"
+            ref={form}
           >
             <div className="flex gap-8">
               <input
