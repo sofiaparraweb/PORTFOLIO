@@ -4,4 +4,29 @@ footer.bg-tertiary {
     border-top: 6px solid #0f3041; /* Cambia el ancho y el color del borde según tus preferencias */
   }
   
+  .dowloads {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: #0f3041;
+    padding: 1rem;
+    position: relative; /* Agrega posición relativa al contenedor */
+    border-radius: 20%;
+  }
   
+  .dowloads::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    height: 4px;
+    background-color: white; /* Color de la línea */
+    transform: translateY(50%); /* Mueve la línea hacia el centro vertical */
+  }
+
+  .download-link {
+    /* Estilos de enlaces de descarga */
+    color: white;
+    text-decoration: none;
+  }
