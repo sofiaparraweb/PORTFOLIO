@@ -5,7 +5,10 @@ import { FiGithub, FiLinkedin, FiMail, FiMapPin } from "react-icons/fi";
 import Project1 from "./assets/img/projects/pokemon.png";
 import Project2 from "./assets/img/projects/lagruta.png";
 import Project3 from "./assets/img/projects/tienda.png";
-
+import Project4 from "./assets/img/projects/dashboard.png"
+import Project5 from "./assets/img/projects/grutaLinea.png"
+import Project6 from "./assets/img/projects/tiendaLirbos.png"
+import Project7 from "./assets/img/projects/Captura de Pantalla 2023-10-13 a la(s) 04.31.43 p. m..png"
 
 import SkillImg1 from "./assets/img/skills/html5.png";
 import SkillImg2 from "./assets/img/skills/CSS.png";
@@ -69,12 +72,12 @@ export const projectsData = [
   },
   {
     id: "3",
-    image: Project3,
+    image: Project6,
     name: "E-commerce",
     category: "Full Stack",
-    href: "https://lagrutaclient.vercel.app/",
+    href: "https://bookverse-client.vercel.app/",
     description:
-      "A complete online store. You can browse products, add them to your cart, proceed to checkout, and make purchases!",
+      "A complete online store. You can browse products, add them to your cart, proceed to checkout, and make purchases!. All managed by a fully functional dashboard",
   }
   
 ];

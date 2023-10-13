@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.css';
 import { social } from '../../data';
-import cvEN from '../../assets/cv/CVPARRAEN.pdf';
-import cvES from '../../assets/cv/CVPARRAES.pdf';
+import cvEN from '../../assets/cv/cvEN.pdf';
+import cvES from '../../assets/cv/cvES.pdf';
 
 const Footer = () => {
   return (
