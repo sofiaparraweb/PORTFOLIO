@@ -14,15 +14,24 @@ footer.bg-tertiary {
     border-radius: 20%;
   }
   
-  .dowloads::after {
+  .downloads::after,
+  .downloads::before {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 50%;
     height: 4px;
-    background-color: white; /* Color de la línea */
-    transform: translateY(50%); /* Mueve la línea hacia el centro vertical */
+    background-color: white;
+    transform: translateY(50%);
+    z-index: 1; /* Asegura que las líneas estén sobre el fondo */
+  }
+  
+  .downloads::after {
+    bottom: 33%;
+  }
+  
+  .downloads::before {
+    bottom: 66%;
   }
 
   .download-link {

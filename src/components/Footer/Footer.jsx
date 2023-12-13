@@ -3,6 +3,7 @@ import './Footer.css';
 import { social } from '../../data';
 import cvEN from '../../assets/cv/cvEN.pdf';
 import cvES from '../../assets/cv/cvES.pdf';
+import cvIT from '../../assets/cv/cvIT.pdf';
 
 const Footer = () => {
   return (
@@ -26,6 +27,9 @@ const Footer = () => {
               </a>
               <a href={cvES} download className='download-link'>
                 CV ESPAÑOL
+              </a>
+              <a href={cvIT} download className='download-link'>
+                CV ITALIANO
               </a>
             </div>
             <div>
