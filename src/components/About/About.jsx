@@ -1,6 +1,6 @@
 import React from "react";
 
-import Image from "../../assets/img/Fondo negro sofi.png";
+import Image from "../../assets/img/IMG_1151.jpg";
 import { navigation } from "../../data";
 import { Link } from "react-scroll";
 // import "./About.css"
